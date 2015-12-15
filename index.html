@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+
+<meta charset="UTF-8">
+<title>Webfonts</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- <script src="loadfonts.jquery.min.js"></script> -->
+<script>!function(){"use strict";function e(e,t,c){e.addEventListener?e.addEventListener(t,c,!1):e.attachEvent&&e.attachEvent("on"+t,c)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function c(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))n(localStorage.font_css_cache);else{var e=new XMLHttpRequest;e.open("GET",o,!0),e.onreadystatechange=function(){4===e.readyState&&(n(e.responseText),localStorage.font_css_cache=e.responseText,localStorage.font_css_cache_file=o)},e.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function n(e){var t=document.createElement("style");t.setAttribute("type","text/css"),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="fonts/font.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?c():e(window,"load",c)}(); </script>
+
+<style>
+	*,html {text-align: center; margin: 0; padding: 0;}
+	a, button {display: inline-block; background: red; padding: 8px 16px; color: #fFF; border:0; font-family: Arial; font-size: 14px; text-decoration: underline; cursor: pointer;margin-top: 32px;}
+	a:hover, button:hover {background: orange; border:0; outline:none;}
+</style>
+
+</head>
+
+<body>
+	<h1 style="display: block; text-align: center; font-weight: 700; font-size: 10vw; line-height: 1.1; padding: 0 15%; font-family: Montserrat, Arial; margin-top: 120px;">Lorem ipsum dolor sit amet consectetur</h1>
+</body>
+
+</html>
